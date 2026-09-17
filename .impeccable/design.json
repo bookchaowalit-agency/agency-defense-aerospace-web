@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "mode": "persuade",
+  "world": "Mission assurance brief",
+  "artifact": "missionbrief",
+  "tokens": {
+    "color": {
+      "bg": "#1b2521",
+      "ink": "#edf0df",
+      "muted": "#b1b9a9",
+      "line": "#4e5d51",
+      "panel": "#27352d",
+      "accent": "#d36c5d",
+      "inverse": "#eff1e2",
+      "inverseInk": "#1b2521"
+    },
+    "typography": {
+      "display": "Noto Serif Thai",
+      "body": "Noto Sans Thai",
+      "utility": "system monospace"
+    },
+    "spacing": {
+      "page": "clamp(18px, 5vw, 76px)",
+      "section": "clamp(67px, 10vw, 144px)"
+    },
+    "shape": {
+      "radius": "world-specific",
+      "elevation": "one deliberate surface system"
+    }
+  }
+}
