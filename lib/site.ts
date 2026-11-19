@@ -21,6 +21,7 @@ export const site = {
   "status": "locked",
   "design": {
     "projectName": "solo-agency-defense-aerospace",
+    "productionUrl": "https://solo-agency-defense-aerospace.vercel.app",
     "archetype": "missionbrief",
     "motif": "missionbrief",
     "world": "Mission assurance brief",
