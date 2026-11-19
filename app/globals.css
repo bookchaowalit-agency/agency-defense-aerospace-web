@@ -11,6 +11,9 @@
   --serif: var(--font-serif-thai), Georgia, 'Times New Roman', serif;
   --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
   --display: var(--serif);
+  /* 2026-11-18 review: focus ring/lines >= 3:1 on --bg; accent as text >= 4.5:1 on --bg and --panel. */
+  --focus: #d36c5d;
+  --accent-text: #da8477;
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +21,6 @@ html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--bg); font-family: var(--sans); }
 ::selection { color: var(--inverse-ink); background: var(--accent); }
 a { color: inherit; }
-a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .skip-link { position: fixed; z-index: 10; top: 8px; left: 8px; padding: 9px 12px; color: var(--inverse-ink); background: var(--inverse); transform: translateY(-160%); }
 .skip-link:focus { transform: translateY(0); }
 .site-shell { min-height: 100vh; overflow: hidden; background: var(--bg); }
