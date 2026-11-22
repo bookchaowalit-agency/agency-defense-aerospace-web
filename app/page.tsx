@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { pseoService } from '@/lib/pseo';
 import { LangText } from '@/components/lang-text';
-import SiteLinks, { portfolioHref } from '@/components/site-links';
+import SiteLinks, { hubHref, portfolioHref } from '@/components/site-links';
 import { type AgencyStatus, readinessCopy } from '@/lib/readiness';
 import { site } from '@/lib/site';
 
@@ -51,7 +51,7 @@ export default function HomePage() {
   return (
     <div className={`site-shell archetype-${site.design.archetype}`} data-site={site.slug}>
       <header className="site-header">
-        <a className="brand" href="#top">
+        <a className="brand" href={hubHref}>
           <span className="brand-mark" aria-hidden="true">{String(site.number).padStart(2, '0')}</span>
           <span><strong>{site.name}</strong><small>{site.thaiName}</small></span>
         </a>
@@ -67,10 +67,9 @@ export default function HomePage() {
               <a className="primary-link" href="#offer">{site.cta}<span className="link-mark" aria-hidden="true" /></a>
               {locked ? <span className="status-badge">ยังไม่เปิดรับงาน</span> : null}
             </div>
-            {/* No portfolio link here: the readiness note below holds the page's one link to it (pSEO plan). */}
+            <div className="hero-meta"><span lang="en">{site.design.material}</span><span lang="en">showcase / {site.stage}</span></div>
             {locked ? <p className="locked-note">{site.fit}</p> : null}
             <Link className="pseo-home-link" href={servicePath}>ดู service page <span aria-hidden="true">↗</span></Link>
-            <div className="hero-meta"><span lang="en">{site.design.material}</span><span>showcase / {site.stage}</span></div>
           </div>
           <div className="hero-art">
             <Artifact />
