@@ -43,7 +43,7 @@ html { scroll-padding-top: 24px; }
 .pseo-home-link { font-size: 14px; }
 
 /* Thai text: no negative tracking, room for tone marks (design floor checker: headings >= 1.3, body >= 1.6). */
-.site-shell .hero h1 { font-size: clamp(36px, 4.2vw, 60px); letter-spacing: normal; line-height: 1.3; text-transform: none; }
+.site-shell .hero h1 { font-size: clamp(40px, 5.2vw, 76px); letter-spacing: normal; line-height: 1.3; text-transform: none; }
 .story-section h2, .offer-intro h2, .readiness-section h2, .pseo-section-heading h2, .pseo-readiness h2, .pseo-card h2, .pseo-index-card h2 { letter-spacing: normal; line-height: var(--leading-thai-heading, 1.35); }
 .story-section h2, .offer-intro h2, .readiness-section h2, .pseo-section-heading h2, .pseo-readiness h2 { font-size: clamp(30px, 3.6vw, 52px); }
 .pseo-card h2, .pseo-index-card h2 { font-size: clamp(26px, 2.8vw, 40px); }
@@ -59,7 +59,7 @@ html { scroll-padding-top: 24px; }
 .pseo-section-heading h2, .pseo-readiness h2, .pseo-card h2 { margin-top: .32em; }
 .pseo-readiness { margin-top: clamp(40px, 6vw, 72px); }
 
-/* Hero: CTA first, then the locked-state note, then the meta line. */
+/* Hero: CTA first, then the meta line, followed by the locked-state note. */
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 31px; }
 .hero-actions .primary-link { margin-top: 0; }
 .status-badge { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border: 1px dashed currentColor; border-radius: 999px; color: var(--ink); font-size: 13px; font-weight: 600; }
@@ -77,6 +77,7 @@ html { scroll-padding-top: 24px; }
 .site-footer, .pseo-footer { flex-wrap: wrap; align-items: center; }
 .site-links { display: flex; flex-wrap: wrap; gap: 0 18px; width: 100%; font-family: var(--sans); font-size: 14px; letter-spacing: normal; text-transform: none; }
 .site-links a { display: inline-flex; align-items: center; min-height: var(--target-touch, 44px); color: var(--ink); text-underline-offset: 4px; }
+.site-footer > span:nth-child(2), .pseo-footer > span:nth-child(2) { font-size: 14px; line-height: 1.6; }
 
 /* Artifact fixes. */
 .archetype-riskmatrix .hero-copy { transform: none; }
